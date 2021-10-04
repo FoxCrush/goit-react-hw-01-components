@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+  outline: 1px solid red;
+}
+.percentage {
+  font-size: large;
+  margin-top: 10px;
+}
