@@ -19,8 +19,6 @@ function StatisticList({ items }) {
 }
 
 StatisticList.protoTypes = {
-  id: PropTypes.number,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  Statistics: PropTypes.node,
 };
 export default StatisticList;
