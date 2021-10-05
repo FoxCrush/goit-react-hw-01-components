@@ -1,0 +1,16 @@
+.statisticsSection {
+  display: block;
+  background-color: #fff;
+  width: min-content;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statList {
+  display: flex;
+  justify-content: center;
+}

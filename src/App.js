@@ -5,7 +5,11 @@ import statisticsData from './json-data/statistical-data.json';
 import StatisticList from './components/statisticList/statisticList';
 import { Fragment } from 'react';
 
-// const colors = ['blue', 'purple', 'red', 'teal'];
+const colors = ['blue', 'purple', 'red', 'teal', 'orange'];
+
+statisticsData.forEach((item, i) => {
+  item.color = colors[i];
+});
 
 function App() {
   return (
@@ -13,8 +17,8 @@ function App() {
       <div>
         <CreateUserCard {...userData} />
       </div>
-      ;
-      <StatisticList items={statisticsData} />
+
+      <StatisticList stats={statisticsData} title="Upload stats" />
     </Fragment>
   );
 }
