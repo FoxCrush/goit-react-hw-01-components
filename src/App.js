@@ -5,10 +5,8 @@ import statisticsData from './json-data/statistical-data.json';
 import StatisticList from './components/statisticList/statisticList';
 import { Fragment } from 'react';
 
-const colors = ['blue', 'purple', 'red', 'teal', 'orange'];
-
-statisticsData.forEach((item, i) => {
-  item.color = colors[i];
+statisticsData.forEach(item => {
+  item.color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 });
 
 function App() {
